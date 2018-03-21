@@ -67,7 +67,9 @@
             <h2><?= $value["maker"] ?></h2>
             <h3><?= $value["model"] ?></h3>
             <p><?= $value["price"] ?></p>
-            <p><?= ($value["is_new"] == 2) ? "Nauja" : "Nauja" ?></p>
+            <p><?= ($value["is_used"] == 2) ? "Naudota" : "" ?></p>
+            <p><?= ($value["is_new"] == 2) ? "Nauja" : "" ?></p>
+            <p><?= ($value["is_crashed"] == 2) ? "Daužta" : "" ?></p>
             <p><?= $value["description"] ?></p>
         </div>
         <?php endforeach; ?>
